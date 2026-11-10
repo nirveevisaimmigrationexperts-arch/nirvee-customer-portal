@@ -1,110 +1,41 @@
 
-* {
-    box-sizing: border-box;
-}
 
-body {
-    margin: 0;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    background: #f1f5f9;
-    color: #1e293b;
-}
 
-header {
-    background: #063b70;
-    color: white;
-    text-align: center;
-    padding: 25px 15px;
-    border-radius: 12px;
-}
+// NIRVEE VISA CUSTOMER PORTAL
 
-header h1 {
-    margin: 0 0 10px;
-    font-size: 28px;
-}
+document.addEventListener("DOMContentLoaded", function () {
 
-header p {
-    margin: 0;
-    font-size: 14px;
-}
+  // Customer Registration
+  const registerForm = document.getElementById("registerForm");
 
-main {
-    max-width: 650px;
-    margin: 25px auto;
-}
+  if (registerForm) {
+    registerForm.addEventListener("submit", function (event) {
+      event.preventDefault();
 
-.welcome,
-.application {
-    background: white;
-    padding: 25px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-}
+      alert("Registration form submitted successfully!");
 
-h2 {
-    color: #063b70;
-}
+    });
+  }
 
-label {
-    display: block;
-    margin-top: 18px;
-    margin-bottom: 7px;
-    font-weight: bold;
-}
+  // Customer Login
+  const loginForm = document.getElementById("loginForm");
 
-input,
-select {
-    width: 100%;
-    padding: 13px;
-    border: 1px solid #cbd5e1;
-    border-radius: 7px;
-    font-size: 16px;
-    background: white;
-}
+  if (loginForm) {
+    loginForm.addEventListener("submit", function (event) {
+      event.preventDefault();
 
-input:focus,
-select:focus {
-    outline: 2px solid #2563eb;
-    border-color: #2563eb;
-}
+      alert("Login system will be connected to secure authentication.");
 
-button {
-    width: 100%;
-    margin-top: 25px;
-    padding: 15px;
-    background: #063b70;
-    color: white;
-    border: none;
-    border-radius: 7px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-}
+    });
+  }
 
-button:hover {
-    background: #0b5599;
-}
+  // Application Status
+  const statusButton = document.getElementById("checkStatus");
 
-footer {
-    text-align: center;
-    padding: 20px;
-    color: #475569;
-    font-size: 13px;
-}
+  if (statusButton) {
+    statusButton.addEventListener("click", function () {
+      alert("Application tracking will be available soon.");
+    });
+  }
 
-@media (max-width: 600px) {
-    body {
-        padding: 12px;
-    }
-
-    header h1 {
-        font-size: 23px;
-    }
-
-    .welcome,
-    .application {
-        padding: 18px;
-    }
-}
+});
